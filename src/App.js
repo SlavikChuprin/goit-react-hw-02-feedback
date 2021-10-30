@@ -7,7 +7,7 @@ function App() {
 
     <div className="App">
       
-      <Section title ="Statistic" />
+      <Section />
       
     </div>
   );

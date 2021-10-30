@@ -1,13 +1,13 @@
 import React from "react";
 import s from './FeedbackOptions.module.css';
 
- const FeedbackOptions = ({onIncrement}) => {
+ const FeedbackOptions = ({onLeaveFeedback}) => {
 
   return (
     <div>
-     <button className={s.button} onClick={onIncrement}>good</button>
-     <button className={s.button} onClick={onIncrement}>neutral</button> 
-     <button className={s.button} onClick={onIncrement}>bad</button>
+     <button className={s.button} onClick={onLeaveFeedback}>good</button>
+     <button className={s.button} onClick={onLeaveFeedback}>neutral</button> 
+     <button className={s.button} onClick={onLeaveFeedback}>bad</button>
    </div>
   );
 }

@@ -2,27 +2,25 @@ import React from "react";
 // import PropTypes from 'prop-types';
 import s from './Section.module.css';
 import Notification from "../Notification/Notification";
-// import FeedbackOptions from "../FeedbackOptions/FeedbackOptions";
-// import Statistics from "../Statistics/Statistics";
+import FeedbackOptions from "../FeedbackOptions/FeedbackOptions";
+import Statistics from "../Statistics/Statistics";
 
-const Section = ({props}, {onClickBtn}) => {
+const Section = ({title}, {onIncrement}, {onTotal, onPositivePercentage} ) => {
   return (
-      
     <div>
-     {/* <section className={s.section}>{props[0]}
-     <FeedbackOptions onIncrement= {onClickBtn} />
-    </section> */}
+    <section className={s.section}>{title[0]}
     
-    <section className={s.section}>{props[1]}
+    <FeedbackOptions onLeaveFeedback={onIncrement}/>
     
-
+    </section>
+   
+   <section className={s.section}>{title[1]}
+    
     <Notification message="No feedback given"/>
+    <Statistics onTotal={onTotal} onPositivePercentage={onPositivePercentage} />
     
- 
-     
     </section>
    </div>
-   
   );
 };
 

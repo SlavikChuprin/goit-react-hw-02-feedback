@@ -1,10 +1,14 @@
 import './App.css';
-import Notification from './components/Notification/Notification';
+import Section from './components/Section/Section';
+
 
 function App() {
   return (
+
     <div className="App">
-      <Notification message ="No feedback given" />
+      
+      <Section title ="Statistic" />
+      
     </div>
   );
 }

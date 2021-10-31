@@ -1,19 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Section from './components/Section/Section';
+import Section from './components/Section';
 
 
 class App extends Component {
-
-  //  static defaultProps = {
-  //   initialRatingGood: 0,
-  //   initialRatingNeutral: 0,
-  //   initialRatingBad: 0,
-  // };
-
-  // static propTypes = {
-  //   //
-  // };
 
   state = { 
     good: 0,

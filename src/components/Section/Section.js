@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import s from './Section.module.css';
-import Notification from "../Notification/Notification";
-import FeedbackOptions from "../FeedbackOptions/FeedbackOptions";
-import Statistics from "../Statistics/Statistics";
+import Notification from '../Notification';
+import FeedbackOptions from '../FeedbackOptions';
+import Statistics from '../Statistics';
 
 const Section = ({title, onIncrement, state, onTotal, onPositivePercentage} ) => {
   return (

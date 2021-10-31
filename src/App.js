@@ -12,23 +12,13 @@ class App extends Component {
   };
 
   handleIncrement = (e) => {
+                   
        const  btnName =e.currentTarget.outerText; 
-          if (btnName === 'good') {
+         
             this.setState( prevState => ({
-                good : prevState.good + 1,  
+                [btnName] : prevState[btnName] + 1,  
             }));
-          }
-          if (btnName === 'neutral') {
-            this.setState(prevState => ({
-                neutral: prevState.neutral + 1,  
-            })); 
-          }
-          if (btnName === 'bad') {
-          this.setState(prevState => ({
-              bad : prevState.bad + 1,  
-          }));
-        }
-          
+         
   };
 
   totalScore = (state) => Object.values(this.state).reduce((total, option)=>(total+=option),0);

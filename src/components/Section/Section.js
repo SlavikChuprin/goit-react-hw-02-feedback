@@ -10,7 +10,7 @@ const Section = ({title, onIncrement, state, onTotal, onPositivePercentage} ) =>
     <div>
     <section className={s.section}>{title[0]}
     
-    <FeedbackOptions onLeaveFeedback={onIncrement}/>
+    <FeedbackOptions options={['good','neutral','bad']} onLeaveFeedback={onIncrement}/>
     
     </section>
    

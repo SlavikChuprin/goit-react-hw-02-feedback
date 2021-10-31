@@ -14,8 +14,8 @@ const Section = ({title, onIncrement, state, onTotal, onPositivePercentage} ) =>
     
     </section>
    
-   <section className={s.section}>{title[1]}
-    {onTotal(state) === 0  ? <Notification message="No feedback given"/> : <Statistics options= {state} onTotal={onTotal} onPositivePercentage={onPositivePercentage} />  }
+   <section className={s.section}>{onTotal(state) === 0 ? '' : title[1]}
+    {onTotal(state) === 0  ? <Notification message="No feedback given..."/> : <Statistics options= {state} onTotal={onTotal} onPositivePercentage={onPositivePercentage} />  }
     </section>
    </div>
   );

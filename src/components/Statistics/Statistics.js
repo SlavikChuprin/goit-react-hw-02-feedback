@@ -1,5 +1,4 @@
 import React from "react";
-// import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
 
 
@@ -13,8 +12,8 @@ const positivePercentage = onPositivePercentage(options);
         <li className={s.statisticsListItem}>Good: {options.good} </li>
         <li className={s.statisticsListItem}>Neutral: {options.neutral} </li>
         <li className={s.statisticsListItem}>Bad: {options.bad}</li>
-        <li className={s.statisticsListItem}>Total: {total}</li>
-        <li className={s.statisticsListItem}>Positiv feedback: {positivePercentage}%</li>
+        <li className={s.statisticsListItemTotal}>Total: {total}</li>
+        <li className={s.statisticsListItemPositive}>Positiv feedback: {positivePercentage}%</li>
         </ul>
     
         
